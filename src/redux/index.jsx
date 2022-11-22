@@ -28,10 +28,10 @@ import todoReducer from './reducers/todoReducers';
 
 const rootReducer = combineReducers({
     counterRed: counterReducer,
-    todoRed: todoReducer
+    todoRed: todoReducer,
 });
 
 export const getStore = () => {
     const store = createStore(rootReducer);
     return store;
-}
+};
